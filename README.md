@@ -6,7 +6,7 @@ In this challenge we're going to use and practice with docker volumes. They can 
 - Using Docker, pull the postgres image: ***docker pull postgres:12.1***
 - Run a container named database1 in dettached mode: ***docker run -d --name database1 postgres:12.1***
 - Run another container named database2 in dettached mode: ***docker run -d --name database2 postgres:12.1***
-- To check how it is referenced the new created volumes attached to the containers use: ***docker volume ls***
+- To check the names of the new created volumes attached to the containers use: ***docker volume ls***
 - Using docker inspect, check where the volume is in our local machine and additional info: ***docker inspect "anonymous-volume-name"***
 - (Optional) An anonymous volume is automatically created when the container is created. If the container is stopped and pruned, the volume will not. To remove the anonymous volume: ***docker volume rm "anonymous-volume-name"***
 <br></br>
